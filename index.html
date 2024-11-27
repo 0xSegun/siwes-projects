@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIWES Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SIWES Projects</h1>
+            <p>Explore the collection of web applications and tools built during my SIWES placement.</p>
+        </header>
+
+        <main>
+            <div class="project-grid">
+                <a href="Calculator.html" class="project-card">
+                    <h2>Calculator App</h2>
+                    <p>A functional app for basic arithmetic operations.</p>
+                </a>
+                <a href="clock.html" class="project-card">
+                    <h2>Clock App</h2>
+                    <p>A digital clock displaying real-time updates.</p>
+                </a>
+                <a href="tic-tac-toe.html" class="project-card">
+                    <h2>Tic Tac Toe Game</h2>
+                    <p>A classic two-player strategy game.</p>
+                </a>
+                <a href="todo_list.html" class="project-card">
+                    <h2>To-Do List App</h2>
+                    <p>An app for task management and organization.</p>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 SIWES Projects | Created by Segun Oladapo</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 0 20px #74ff3b';
+            });
+    
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '8px 8px 15px rgba(0, 0, 0, 0.5), -8px -8px 15px rgba(255, 255, 255, 0.1)';
+            });
+        });
+    </script>    
+</body>
+</html>
